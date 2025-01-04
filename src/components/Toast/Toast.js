@@ -9,7 +9,7 @@ import {
 
 import VisuallyHidden from '../VisuallyHidden';
 
-import styles from './Toast.module.css';
+import * as styles from './Toast.module.css';
 
 const ICONS_BY_VARIANT = {
   notice: Info,

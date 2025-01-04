@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './Button.module.css';
+import * as styles from './Button.module.css';
 
 function Button({ className = '', ...delegated }) {
   return (

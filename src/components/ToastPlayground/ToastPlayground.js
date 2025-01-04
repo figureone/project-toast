@@ -3,7 +3,7 @@ import React from 'react';
 import Button from '../Button';
 import ToastShelf from '../ToastShelf';
 
-import styles from './ToastPlayground.module.css';
+import * as styles from './ToastPlayground.module.css';
 
 const VARIANT_OPTIONS = ['notice', 'warning', 'success', 'error'];
 
