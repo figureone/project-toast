@@ -19,7 +19,7 @@ const ICONS_BY_VARIANT = {
 };
 
 function Toast({ variant = 'notice', handleDismiss, children }) {
-  if (!ICONS_BY_VARIANT.hasOwnProperty(variant)) {
+  if (!Object.hasOwnProperty.call(ICONS_BY_VARIANT, variant)) {
     throw new Error(
       `Invalid Toast variant: ${variant}. Available variants: ${Object.keys(
         ICONS_BY_VARIANT
