@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ToastContext = React.createContext({});
+import { ToastContext } from './index';
 
 function ToastProvider({ children }) {
   // Example Toast: { id: random-uuid, variant: 'notice', message: 'something' }.
