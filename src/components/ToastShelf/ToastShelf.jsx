@@ -6,7 +6,22 @@ import Toast from '../Toast';
 import * as styles from './ToastShelf.module.css';
 
 function ToastShelf() {
-  const { toasts, removeToast } = React.useContext(ToastContext);
+  const { toasts, removeToast, removeAllToasts } =
+    React.useContext(ToastContext);
+
+  React.useEffect(() => {
+    function removeAllToastsOnEscape(event) {
+      if (event.code === 'Escape') {
+        removeAllToasts();
+      }
+    }
+
+    window.addEventListener('keydown', removeAllToastsOnEscape);
+
+    return () => {
+      window.removeEventListener('keydown', removeAllToastsOnEscape);
+    };
+  });
 
   return (
     <ol className={styles.wrapper}>
