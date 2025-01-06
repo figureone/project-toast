@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ToastContext from '../ToastProvider';
+import { ToastContext } from '../ToastProvider';
 
 import Button from '../Button';
 import ToastShelf from '../ToastShelf';

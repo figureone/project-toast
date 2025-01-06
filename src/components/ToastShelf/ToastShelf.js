@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ToastContext from '../ToastProvider/ToastProvider.js';
+import { ToastContext } from '../ToastProvider';
 
 import Toast from '../Toast';
 import * as styles from './ToastShelf.module.css';
